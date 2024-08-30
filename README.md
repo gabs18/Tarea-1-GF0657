@@ -1,4 +1,4 @@
-# <p style="text-align: center;"> Conectividad del Parque Metropolitano La Sabana, Costa Rica </p>
+# Conectividad del Parque Metropolitano La Sabana, Costa Rica
 
 ![Imagen_Sabana](https://iconnia.com/wp-content/uploads/2020/11/lago-la-sabana5.jpg)
 _Créditos de la fotografía: [ICONIA](https://iconnia.com/wp-content/uploads/2020/11/lago-la-sabana5.jpg)_
@@ -9,7 +9,7 @@ _Créditos de la fotografía: [ICONIA](https://iconnia.com/wp-content/uploads/20
 >
 >El Parque Metropolitano La Sabana, con sus 68 hectáreas, es el principal espacio verde de San José, Costa Rica, ubicado en el distrito de Mata Redonda. Este parque ofrece una variedad de actividades recreativas y culturales, contando con canchas de fútbol, pistas de atletismo, lagos artificiales, áreas de picnic, el Museo de Arte Costarricense y el Estadio Nacional.  Además, su estratégica ubicación y conectividad con múltiples medios de transporte facilitan el acceso desde diferentes puntos de la ciudad, promoviendo su uso frecuente. La investigación destaca el papel crucial en la movilidad urbana.
 
-_<h5>_ **Palabras clave:** _La Sabana, Parque Metropolitano, Costa Rica, StoryMap, Geovisualización._
+**Palabras clave:** _La Sabana, Parque Metropolitano, Costa Rica, StoryMap, Geovisualización._
 
 &nbsp;
 
@@ -34,16 +34,21 @@ Este parque cuenta con una gran **conectividad** en el sentido de rutas y medios
 
 &nbsp;
 
+## Contexto geográfico
+
+El Parque Metropolitano de La Sabana se encuentra entre las coordenadas 9.9382571 a 9.937749 al norte, -84.108779 a -84.098331 al este, en el distrito de Mata Redonda. Tiene una extensión de casi 68 hectáreas y se encuentra a 1333 m.s.n.m. Su clima es de sabana tropical, _Aw_ según la clasificación _Köppen-Geiger_, y tiene una temperatura media anual de 19,5°C con una precipitación de alrededor de 2699 mm (Climate-Data, 2024). 
+
+En los costados del parque se encuentran las rutas nacionales: 104 al oeste y al norte, ruta 27 y Avenida 12 al sur, ruta 1 al este, y el comienzo del Paseo Colón y Avenida 10 al este. Estas calles son altamente transitadas por las personas que quieren atravesar el Gran Área Metropolitana, por lo que La Sabana se ha convertido en un lugar interconectado con el resto del GAM. Distritos como Merced, Hospital, Pavas y Uruca son los que tienen mayor cercanía con el parque, y por ende, los cuales tienen mayor influencia.
+
+&nbsp;
+
 ## Fuentes de información
 
-<p> Las rutas de transporte se pretenden analizar con datos de OpenStreetMap (OSM), y la base de datos de la aplicación móvil Moovit; específicamente, para crear un campo con las rutas de los autobuses que se detienen en cada parada.
-
-<p style='text-align: right;'>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/800px-Openstreetmap_logo.svg.png" alt="Logo de OpenStreetMap" width="80"/>
 
 <img src="https://www.iphonelife.com/sites/iphonelife.com/files/Screen%20Shot%202015-06-02%20at%208.56.52%20PM.png" alt="Logo de Moovit" width="80">
 
-</p>
+Las rutas de transporte se pretenden analizar con datos de OpenStreetMap (OSM), y la base de datos de la aplicación móvil Moovit; específicamente, para crear un campo con las rutas de los autobuses que se detienen en cada parada. Se pretende filtrar los campos de los polígonos _leisure, sport_ y _name_ para el mapa de usos, y el campo de _highway_ de líneas y puntos en las rutas y paradas.
 
 &nbsp;
 
@@ -59,26 +64,29 @@ Los **datos geoespaciales** que se pretenden emplear son los siguientes:
 | Paradas de autobús                              | Punto              |
 | Paradas de ferrocarril                          | Punto              |
 
+_Tabla 1. Capas geoespaciales a utilizar._
+
 &nbsp;
 
 ## Problemas a resolver
 
-Se debe filtrar por categorizaron los campos de los polígonos leisure, sport y name para el mapa de usos, y el campo de highway de líneas y puntos en las rutas y paradas.
+El Parque Metropolitano La Sabana está bien conectado y es accesible por numerosas rutas de autobuses, la alta demanda de estas rutas puede resultar en tráfico denso, lo que afecta la fluidez de la movilidad en ciertos momentos. Esta situación refleja tanto las ventajas como los desafíos de tener un espacio recreativo y cultural de gran importancia en una ubicación central y altamente accesible.
+
 
 &nbsp;
 &nbsp;
 
 ### Referencias bibliográficas
 
-* Solera, G. (2017). Parque La Sabana. Icoder.go.cr.  [https://icoder.go.cr/servicios/parques-recreativos/68-parque-la-sabana](https://icoder.go.cr/servicios/parques-recreativos/68-parque-la-sabana)
-&nbsp;
-* Municipalidad de San José,  (2016). DIAGNÓSTICO CANTONAL. Dirección de Planificación y Evaluación. [https://www.msj.go.cr/docu/Informes%20y%20Estudios%20de%20Desarrollo%20Urbano/Diagn%C3%B3stico%20Cantonal%202016.pdf](https://www.msj.go.cr/docu/Informes%20y%20Estudios%20de%20Desarrollo%20Urbano/Diagn%C3%B3stico%20Cantonal%202016.pdf)
+* Climate-Data. (2024). Clima San José. Climate-Data.org. [https://es.climate-data.org/america-del-norte/costa-rica/san-jose-1003/](https://es.climate-data.org/america-del-norte/costa-rica/san-jose-1003/) 
 &nbsp;
 * Dufoe, A. (2015). Moovit: Navigate Public Transit Like a Pro. _iPhoneLife._ [https://www.iphonelife.com/sites/iphonelife.com/files/Screen%20Shot%202015-06-02%20at%208.56.52%20PM.png](https://www.iphonelife.com/sites/iphonelife.com/files/Screen%20Shot%202015-06-02%20at%208.56.52%20PM.png)
 &nbsp;
+* Municipalidad de San José,  (2016). DIAGNÓSTICO CANTONAL. Dirección de Planificación y Evaluación. [https://www.msj.go.cr/docu/Informes%20y%20Estudios%20de%20Desarrollo%20Urbano/Diagn%C3%B3stico%20Cantonal%202016.pdf](https://www.msj.go.cr/docu/Informes%20y%20Estudios%20de%20Desarrollo%20Urbano/Diagn%C3%B3stico%20Cantonal%202016.pdf)
+&nbsp;
 * Openstreetmap Foundation (2011). Logo of the OpenStreetMap project.  _Wikimedia Foundation, Inc._ [https://es.wikipedia.org/wiki/OpenStreetMap#/media/Archivo:Openstreetmap_logo.svg](https://es.wikipedia.org/wiki/OpenStreetMap#/media/Archivo:Openstreetmap_logo.svg)
 &nbsp;
-
-‌
+* Solera, G. (2017). Parque La Sabana. Icoder.go.cr.  [https://icoder.go.cr/servicios/parques-recreativos/68-parque-la-sabana](https://icoder.go.cr/servicios/parques-recreativos/68-parque-la-sabana)
+&nbsp;
 
 ‌
