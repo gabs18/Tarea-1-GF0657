@@ -21,7 +21,7 @@ _Créditos de la fotografía: [ICONIA](https://iconnia.com/wp-content/uploads/20
 
 ### Objetivo general
 
- **Evaluar la efectividad y conectividad de las rutas de transporte para facilitar el acceso al Parque Metropolitano La Sabana.**
+**Evaluar la efectividad y conectividad de las rutas de transporte para facilitar el acceso al Parque Metropolitano La Sabana.**
 
 &nbsp;
 &nbsp;
@@ -44,11 +44,11 @@ En los costados del parque se encuentran las rutas nacionales: 104 al oeste y al
 
 ## Fuentes de información
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/800px-Openstreetmap_logo.svg.png" alt="Logo de OpenStreetMap" width="80"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/800px-Openstreetmap_logo.svg.png" alt="Logo de OpenStreetMap" width="80" align="right" />
 
-<img src="https://www.iphonelife.com/sites/iphonelife.com/files/Screen%20Shot%202015-06-02%20at%208.56.52%20PM.png" alt="Logo de Moovit" width="80">
+<img src="https://www.iphonelife.com/sites/iphonelife.com/files/Screen%20Shot%202015-06-02%20at%208.56.52%20PM.png" alt="Logo de Moovit" width="80" align="right" />
 
-Las rutas de transporte se pretenden analizar con datos de OpenStreetMap (OSM), y la base de datos de la aplicación móvil Moovit; específicamente, para crear un campo con las rutas de los autobuses que se detienen en cada parada. Se pretende filtrar los campos de los polígonos _leisure, sport_ y _name_ para el mapa de usos, y el campo de _highway_ de líneas y puntos en las rutas y paradas.
+Las rutas de transporte se pretenden analizar con datos de OpenStreetMap (OSM), y la base de datos de la aplicación móvil Moovit; específicamente, para crear un campo con las rutas de los autobuses que se detienen en cada parada. Se pretende filtrar los campos de los polígonos _leisure, sport_ y _name_ para el mapa de usos, y el campo de _highway_ de líneas y puntos en las rutas y paradas. Además, se piensa utilizar la capa del rutas de la Autoridad Reguladora de Servicios Públicos [(ASESEP)](https://mapas.aresep.go.cr/portal/apps/webappviewer/index.html?id=ce2bc92156f5463c8a244d9457896a64).
 
 &nbsp;
 
@@ -70,9 +70,15 @@ _Tabla 1. Capas geoespaciales a utilizar._
 
 ## Problemas a resolver
 
-El Parque Metropolitano La Sabana está bien conectado y es accesible por numerosas rutas de autobuses, la alta demanda de estas rutas puede resultar en tráfico denso, lo que afecta la fluidez de la movilidad en ciertos momentos. Esta situación refleja tanto las ventajas como los desafíos de tener un espacio recreativo y cultural de gran importancia en una ubicación central y altamente accesible.
+El Parque Metropolitano La Sabana está bien conectado y es accesible por numerosas rutas de autobuses, la alta demanda de estas rutas puede resultar en tráfico denso, lo que afecta la fluidez de la movilidad en ciertos momentos. Esta situación refleja tanto las ventajas como los desafíos de tener un espacio recreativo y cultural de gran importancia en una ubicación central y altamente accesible. Ahora, los principales desafíos para tratar los datos geoespaciales son los siguientes:
 
+1. **Extracción de los datos de la capa del ARESEP.** La capa de tipo línea no tiene un campo específicamente de geometría, su tabla de atributos contiene solamente los orígenes y destinos de cada ruta de transporte. Por lo tanto, habría que idear una forma de visualizar y filtrar las rutas que pasen por La Sabana. 
+&nbsp;
+2. **Visualización e identificación de las rutas.** Es necesario que las rutas se puedan visualizar en la cartografía interactiva se forma eficiente y clara porque muchas rutas de autobús y una de ferrocarril pasan por las mismas calles. Por ende, hay que resolver cómo poder visualizar bien las rutas de transporte.
+&nbsp;
+3. **Paradas de autobús.** Se pretende integrar información de Moovit a la capa de puntos de paradas de autobús, y de esa forma, crear un pop-up que indique cuáles rutas de autobús paran en dicha parada. Esto puede verse como un problema a resolver por la cantidad de información que hay que integrar al campo nuevo de autobuses que paran en las paradas.
 
+&nbsp;
 &nbsp;
 &nbsp;
 
